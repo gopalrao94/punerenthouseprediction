@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House_Rent_Price</title>
+</head>
+<body style="background-color: hsl(199, 70%, 37%);">
+<!-- <body background-image="static/pune.jpg" background-repeat="no-repeat” background-size="100% 100%”> -->
+    <!-- <center> -->
+    <center>
+    <h1> Pune House Rent Price Prediction </h1>
+    </center>
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INSURANCE -->
+    <br>
+    <br>
+    <img src='static\pune.jpg'>
+    
+    <br><br>
+    <form method="get" action ="/predict_rent">
+        
+        <label>AGENT/BUILDER/OWNER:</label>
+        <select name = "seller_type">
+            <option value="AGENT">AGENT</option>
+            <option value="BUILDER">BUILDER</option>
+            <option value="OWNER">OWNER</option></select>
+
+        <br>
+        <br>   						
+        <label>BEDROOM:</label>
+        <select name = "bedroom">
+            <option value = 1>1</option>
+            <option value = 2>2</option>
+            <option value = 3>3</option>
+            <option value = 4>4</option></select>
+    
+        <br>  
+        <br>        
+        <label>BHK/RK:</label>
+        <select name = "layout_type">
+            <option value="BHK">BHK</option>
+            <option value="RK">RK</option></select>
+
+        <br>
+        <br>
+        <label>PROPERTY TYPE:</label>
+        <select name = "property_type">
+            <option value="Apartment">Apartment</option>
+            <option value="Studio Apartment">Studio Apartment</option>
+            <option value="Independent House">Independent House</option>
+            <option value="Independent Floor">Independent Floor</option>
+            <option value="Villa">Villa</option>
+            <option value="Penthouse">Penthouse</option></select>
+
+       
+        <br>
+        <br>
+        <label>AREA:</label>
+        <input type="text" name ="area">
+        <br>
+        <br>
+        <label>FURNISH TYPE:</label>
+        <select name="furnish_type">
+            <option value="Unfurnished">Unfurnished</option>
+            <option value="Semi-Furnished">Semi-Furnished</option>
+            <option value="Furnished">Furnished</option></select>
+
+        <br>
+        <br>
+        <label>BATHROOM:</label>
+        <select name = "bathroom">
+            <option value = 1>1</option>
+            <option value = 2>2</option>
+            <option value = 3>3</option>
+            <option value = 4>4</option>
+            <option value = 5>5</option>
+            <option value = 6>6</option></select>
+        <br>
+        <br>
+        <label>LOCALITY:</label>
+        <input type="text" name ="locality">
+
+        <br>
+        <br>
+        <input type="submit" value ="SUBMIT">
+     
+
+    </form>
+   
+    <br>
+    <br>
+    {{rent}}
+    <!-- </center>  -->
+</body>
+</html>
+
