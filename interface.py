@@ -1,4 +1,4 @@
-from project_app.utils import HouseRentPrediction
+from utils import HouseRentPrediction
 from flask import Flask, jsonify, render_template, request
 import config
 
